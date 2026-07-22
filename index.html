@@ -7,21 +7,21 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
         body { display: flex; height: 100vh; background-color: #fff; overflow: hidden; }
-        .left-section { width: 50%; padding: 40px 60px; display: flex; flex-direction: column; justify-content: center; }
-        .logo-area { display: flex; align-items: center; margin-bottom: 20px; }
-        .logo-area img { height: 40px; margin-right: 15px; }
-        h2 { font-size: 24px; color: #333; margin-bottom: 30px; }
-        .tabs { display: flex; margin-bottom: 25px; border-radius: 6px; overflow: hidden; border: 1px solid #ddd; width: fit-content; }
-        .tab { padding: 10px 25px; font-size: 14px; cursor: pointer; background: #f8f9fa; border: none; }
+        .left-section { width: 50%; padding: 30px 50px; display: flex; flex-direction: column; justify-content: center; }
+        .logo-area { display: flex; align-items: center; margin-bottom: 15px; }
+        .logo-area img { height: 35px; margin-right: 15px; }
+        h2 { font-size: 22px; color: #333; margin-bottom: 20px; }
+        .tabs { display: flex; margin-bottom: 20px; border-radius: 6px; overflow: hidden; border: 1px solid #ddd; width: fit-content; }
+        .tab { padding: 8px 20px; font-size: 13px; cursor: pointer; background: #f8f9fa; border: none; }
         .tab.active { background: #6b358c; color: #fff; font-weight: bold; }
-        .form-group { margin-bottom: 20px; width: 100%; max-width: 450px; }
-        .form-group label { display: block; font-size: 13px; color: #333; margin-bottom: 8px; font-weight: bold; }
-        .input-box { display: flex; align-items: center; border: 1px solid #ccc; border-radius: 4px; padding: 10px; width: 100%; background: #fff; }
-        .input-box span { margin-right: 10px; color: #666; font-size: 16px; }
-        .input-box input { border: none; outline: none; width: 100%; font-size: 14px; }
-        .forgot { text-align: right; max-width: 450px; font-size: 12px; color: #666; margin-bottom: 20px; cursor: pointer; }
-        .btn-login { background-color: #0b6623; color: white; border: none; padding: 12px; width: 100%; max-width: 450px; font-size: 16px; border-radius: 4px; cursor: pointer; font-weight: bold; }
-        .register-text { text-align: center; max-width: 450px; font-size: 12px; margin-top: 20px; color: #333; }
+        .form-group { margin-bottom: 15px; width: 100%; max-width: 450px; }
+        .form-group label { display: block; font-size: 12px; color: #333; margin-bottom: 5px; font-weight: bold; }
+        .input-box { display: flex; align-items: center; border: 1px solid #ccc; border-radius: 4px; padding: 8px 10px; width: 100%; background: #fff; }
+        .input-box span { margin-right: 10px; color: #666; font-size: 14px; }
+        .input-box input, .input-box select { border: none; outline: none; width: 100%; font-size: 13px; background: transparent; }
+        .forgot { text-align: right; max-width: 450px; font-size: 12px; color: #666; margin-bottom: 15px; cursor: pointer; }
+        .btn-login { background-color: #0b6623; color: white; border: none; padding: 10px; width: 100%; max-width: 450px; font-size: 15px; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        .register-text { text-align: center; max-width: 450px; font-size: 12px; margin-top: 15px; color: #333; }
         .register-text a { color: #000; text-decoration: none; font-weight: bold; }
         .right-section { width: 50%; background: #6b358c; display: flex; flex-direction: column; justify-content: space-between; padding: 40px; color: white; position: relative; }
         .right-top { display: flex; justify-content: flex-end; gap: 15px; align-items: center; font-size: 12px; }
@@ -34,7 +34,6 @@
 
     <div class="left-section">
         <div class="logo-area">
-            <!-- Online Placeholder Logo taake local file ki zaroorat na pare -->
             <img src="https://www.meezanbank.com/wp-content/themes/mbl/images/logo.png" alt="Meezan Logo">
         </div>
         <h2>Meezan Funds Online</h2>
@@ -45,6 +44,19 @@
         </div>
 
         <form action="/login" method="POST">
+            <!-- Top par Gold Package aur 24 Hours Report ka section -->
+            <div class="form-group" style="background: #fdf8f0; padding: 8px 12px; border-radius: 4px; border: 1px solid #e0c285;">
+                <label style="color: #8c6b35;">Operations Package & Report Timing</label>
+                <div class="input-box" style="background: #fff; margin-bottom: 5px;">
+                    <span>⭐</span>
+                    <select name="package">
+                        <option value="Gold Package Operations">Gold Package (Priority Processing)</option>
+                        <option value="Standard Package">Standard Package</option>
+                    </select>
+                </div>
+                <small style="color: #b33939; font-size: 11px; font-weight: bold;">⏳ Reports & operations will be finalized within 24 hours.</small>
+            </div>
+
             <div class="form-group">
                 <label>Customer Number</label>
                 <div class="input-box">
