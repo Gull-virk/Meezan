@@ -1,0 +1,323 @@
+/* ===========================
+   Google Font
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f5f7;
+}
+
+/* ===========================
+   Main Layout
+=========================== */
+
+.main{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:40px 0;
+}
+
+/* ===========================
+   Login Card
+=========================== */
+
+.login-card{
+
+    background:#fff;
+    border-radius:15px;
+    padding:40px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.logo{
+
+    width:220px;
+    margin-bottom:20px;
+
+}
+
+.title{
+
+    color:#333;
+    font-weight:600;
+    margin-bottom:30px;
+
+}
+
+/* ===========================
+   Tabs
+=========================== */
+
+.tabs{
+
+    display:flex;
+    margin-bottom:30px;
+
+}
+
+.tabs button{
+
+    width:50%;
+    height:55px;
+    border:none;
+    background:#ececec;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.tabs button.active{
+
+    background:#742d8f;
+    color:white;
+
+}
+
+.tabs button:first-child{
+
+    border-radius:8px 0 0 8px;
+
+}
+
+.tabs button:last-child{
+
+    border-radius:0 8px 8px 0;
+
+}
+
+/* ===========================
+   Form
+=========================== */
+
+label{
+
+    font-weight:500;
+    margin-bottom:8px;
+    display:block;
+
+}
+
+.form-control{
+
+    height:52px;
+
+}
+
+.input-group-text{
+
+    background:white;
+
+}
+
+.form-control:focus{
+
+    box-shadow:none;
+    border-color:#742d8f;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+/* ===========================
+   Login Button
+=========================== */
+
+.login-btn{
+
+    background:#008f55;
+    color:white;
+    height:55px;
+    border:none;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:#006e42;
+    color:white;
+
+}
+
+.register{
+
+    margin-top:25px;
+    text-align:center;
+
+}
+
+.register a{
+
+    color:#742d8f;
+    font-weight:600;
+
+}
+
+/* ===========================
+   Banner
+=========================== */
+
+.banner{
+
+    background:url("images/banner.jpg");
+    background-size:cover;
+    background-position:center;
+    min-height:650px;
+    border-radius:15px;
+    overflow:hidden;
+    position:relative;
+
+}
+
+.overlay{
+
+    position:absolute;
+    inset:0;
+    background:rgba(88,18,112,.65);
+    padding:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+}
+
+.badge-box{
+
+    text-align:right;
+
+}
+
+.badge-box img{
+
+    width:120px;
+
+}
+
+.content{
+
+    color:white;
+
+}
+
+.content h2{
+
+    font-size:36px;
+    margin-bottom:20px;
+
+}
+
+.content p{
+
+    line-height:1.9;
+    font-size:18px;
+
+}
+
+.footer-info{
+
+    display:flex;
+    justify-content:space-between;
+    color:white;
+
+}
+
+/* ===========================
+   Hover
+=========================== */
+
+.login-card:hover,
+.banner:hover{
+
+    transform:translateY(-4px);
+    transition:.3s;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:991px){
+
+.banner{
+
+margin-top:30px;
+min-height:500px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.login-card{
+
+padding:25px;
+
+}
+
+.logo{
+
+width:170px;
+
+}
+
+.title{
+
+font-size:28px;
+
+}
+
+.content h2{
+
+font-size:28px;
+
+}
+
+.content p{
+
+font-size:16px;
+
+}
+
+.footer-info{
+
+flex-direction:column;
+gap:15px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.tabs button{
+
+font-size:14px;
+
+}
+
+.login-btn{
+
+font-size:16px;
+
+}
+
+}
